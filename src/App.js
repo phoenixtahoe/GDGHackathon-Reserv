@@ -4,6 +4,7 @@ import styled from "styled-components";
 import "bootstrap/dist/css/bootstrap.css";
 import { Route, BrowserRouter, Redirect, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage/index";
+import Search from "./components/Search/index";
 import './App.css';
 
 class App extends Component {
@@ -16,6 +17,11 @@ class App extends Component {
           path="/"
           exact
           component={Homepage}
+          />
+        <Route
+          path="/Search"
+          exact
+          component={Search}
           />
         <Route render={() => <h3>No Match</h3>} />
       </Switch>
