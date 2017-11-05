@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Route, BrowserRouter, Redirect, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage/index";
 import Search from "./components/Search/index";
+import * as firebase from "firebase";
 import './App.css';
 
 class App extends Component {
